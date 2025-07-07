@@ -26,10 +26,7 @@ async function run() {
 run();
 
 const app = express();
-app.use(cors({
-  origin: "https://vishpath-fx7j.vercel.app", // your Vercel frontend URL
-  credentials: true
-}));
+app.use(cors());
 app.use(bodyParser.json());
 const SECRET_KEY = "123456789";
 
